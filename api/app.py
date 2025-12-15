@@ -9,8 +9,8 @@ from rag_pipeline.ingest import load_resources, retrieve_context
 
 app = Flask(__name__)
 
-# Load AI Brain once at startup
-print("⏳ Starting Server & Loading Resources...")
+# Load Brain once at startup
+print(" Starting Server & Loading Resources...")
 resources = load_resources()
 
 @app.route('/')

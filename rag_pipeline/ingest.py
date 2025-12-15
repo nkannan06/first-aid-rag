@@ -13,7 +13,7 @@ TEXT_OUTPUT_PATH = os.path.join(BASE_DIR, "indexed_text.csv")
 
 # --- GLOBAL MODEL LOADER (For the API) ---
 def load_resources():
-    print("⏳ Loading Embedding Model & Index...")
+    print(" Loading Embedding Model & Index...")
     try:
         # 1. Load Model
         model = SentenceTransformer('BAAI/bge-small-en-v1.5')
@@ -31,11 +31,11 @@ def load_resources():
         df = pd.read_csv(TEXT_OUTPUT_PATH)
         documents = df['text'].tolist()
         
-        print("✅ Resources Loaded Successfully!")
+        print(" Resources Loaded Successfully!")
         return {"model": model, "index": index, "documents": documents}
         
     except Exception as e:
-        print(f"❌ Error loading resources: {e}")
+        print(f" Error loading resources: {e}")
         return None
 
 # --- RETRIEVAL FUNCTION (For the API) ---
@@ -75,7 +75,7 @@ def load_raw_documents():
     # 1. Load CSV
     csv_path = os.path.join(DATA_DIR, "etl_cleaned_dataset.csv")
     if os.path.exists(csv_path):
-        print(f"📄 Processing CSV: {csv_path}")
+        print(f" Processing CSV: {csv_path}")
         df = pd.read_csv(csv_path)
         # Combine columns
         df['combined_text'] = df.astype(str).agg(' | '.join, axis=1)
@@ -84,7 +84,7 @@ def load_raw_documents():
     # 2. Load PDF
     pdf_path = os.path.join(DATA_DIR, "First Aid Quick Guide.pdf")
     if os.path.exists(pdf_path):
-        print(f"📄 Processing PDF: {pdf_path}")
+        print(f" Processing PDF: {pdf_path}")
         try:
             reader = PdfReader(pdf_path)
             for page in reader.pages:
@@ -92,12 +92,12 @@ def load_raw_documents():
                 if text:
                     docs.append(text)
         except Exception as e:
-            print(f"⚠️ Error reading PDF: {e}")
+            print(f" Error reading PDF: {e}")
 
     # 3. Load TXT
     txt_path = os.path.join(DATA_DIR, "First_Aid_FAQ_and_Decision_Tips.txt")
     if os.path.exists(txt_path):
-        print(f"📄 Processing Text File: {txt_path}")
+        print(f" Processing Text File: {txt_path}")
         with open(txt_path, 'r', encoding='utf-8') as f:
             content = f.read()
             chunks = content.split('\n\n')
@@ -106,16 +106,16 @@ def load_raw_documents():
     return docs
 
 def create_index():
-    print("🚀 Starting Ingestion Process...")
+    print(" Starting Ingestion Process...")
     model = SentenceTransformer('BAAI/bge-small-en-v1.5')
     documents = load_raw_documents()
     
-    print(f"📊 Total Documents to Index: {len(documents)}")
+    print(f" Total Documents to Index: {len(documents)}")
     if not documents:
         print("❌ Error: No documents found!")
         return
 
-    print("🧠 Generating Embeddings...")
+    print(" Generating Embeddings...")
     embeddings = model.encode(documents, convert_to_numpy=True)
     
     dimension = embeddings.shape[1]
@@ -125,7 +125,7 @@ def create_index():
     faiss.write_index(index, INDEX_OUTPUT_PATH)
     pd.DataFrame({'text': documents}).to_csv(TEXT_OUTPUT_PATH, index=False)
     
-    print(f"✅ Success! Index saved to {INDEX_OUTPUT_PATH}")
+    print(f"Success! Index saved to {INDEX_OUTPUT_PATH}")
 
 if __name__ == "__main__":
     create_index()
