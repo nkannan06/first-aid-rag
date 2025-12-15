@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid AI Chat</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        #chat-history { border: 1px solid #ccc; height: 400px; overflow-y: scroll; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .user-msg { color: blue; font-weight: bold; margin-top: 10px; }
+        .bot-msg { color: green; margin-left: 20px; }
+        .source-box { font-size: 0.8em; color: #666; background: #f9f9f9; padding: 5px; margin-left: 20px; border-left: 3px solid #ccc; }
+        #question { width: 70%; padding: 10px; }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>🚑 First Aid Micro-Guide</h1>
+    <div id="chat-history"></div>
+    
+    <div style="display: flex; gap: 10px;">
+        <input type="text" id="question" placeholder="Ask about a cut, burn, or emergency..." onkeypress="handleEnter(event)">
+        <button onclick="askBot()">Send</button>
+    </div>
+
+    <script>
+        async function askBot() {
+            const input = document.getElementById("question");
+            const history = document.getElementById("chat-history");
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            // 1. Add User Message to Screen
+            history.innerHTML += `<div class="user-msg">You: ${text}</div>`;
+            input.value = ""; // Clear input
+            history.scrollTop = history.scrollHeight; // Scroll to bottom
+
+            // 2. Send to API
+            try {
+                const response = await fetch("/api/ask", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ question: text })
+                });
+                
+                const data = await response.json();
+
+                // 3. Add Bot Response
+                history.innerHTML += `<div class="bot-msg"><strong>AI:</strong> ${data.answer}</div>`;
+
+                // 4. Add Sources (if any)
+                if (data.sources && data.sources.length > 0) {
+                    let sourceHtml = data.sources.map(s => `• <em>${s.id}:</em> ${s.snippet}`).join("<br>");
+                    history.innerHTML += `<div class="source-box"><strong>Sources:</strong><br>${sourceHtml}</div>`;
+                }
+
+            } catch (error) {
+                history.innerHTML += `<div class="bot-msg" style="color:red;">Error: Could not reach server.</div>`;
+            }
+            
+            history.scrollTop = history.scrollHeight;
+        }
+
+        function handleEnter(e) {
+            if (e.key === "Enter") askBot();
+        }
+    </script>
+</body>
+</html>

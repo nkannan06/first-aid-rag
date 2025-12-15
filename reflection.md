@@ -1,33 +1,37 @@
-# Reflection Paper: First Aid Micro-Guide RAG
-**Team:** Nitish Kannan (vqa8ue), Keegan Jewell (mmr2ve)
-**Date:** December 15, 2025
+End-of-Year Capstone Reflection: First Aid Micro-Guide RAG System
+Team Members: Nitish Kannan (vqa8ue), Keegan Jewell (mmr2ve) 
+Course: DS2002 - Data Systems 
+Date: December 15, 2025
 
-## A. Architecture & Design Decisions
-For this capstone, we built a domain-specific RAG system focused on First Aid. We chose this domain because accurate, offline-capable medical information is critical during emergencies where internet access might be unreliable.
+**A. Architecture and Design Decisions**
+Domain & Objective: We engineered a Retrieval-Augmented Generation (RAG) system specifically for Emergency First Aid Protocols. We deliberately chose a "retrieval-focused" architecture rather than a fully generative one. In a high-stakes domain like medical assistance, the risk of an LLM "hallucinating" an incorrect step could make the situation worse. By designing the system to return raw, accurate chunks from our verified dataset, we ensured 100% match to the source material. This constraint prioritizes safety and accuracy over conversational fluency.
+Model Selection: We selected the BAAI/bge-small-en-v1.5 embedding model (384 dimensions) from the MTEB leaderboard. We considered using larger models, such as OpenAI’s text-embedding-3-small or bge-large, but they introduced unacceptable trade offs. The larger models required significantly more RAM and increased inference latency to over 1.5 seconds on our target hardware. By sticking to the 384-dimensional model, we kept the embedding generation time under 400ms per query, ensuring the application remained responsive even on a standard CPU-based environment (GitHub Codespaces with 16GB RAM).
+Vector Store & Indexing: We implemented FAISS (Facebook AI Similarity Search) using the IndexFlatL2 index type. This index performs an exact brute force search using Euclidean distance. While approximate nearest neighbor (ANN) algorithms like HNSW are faster for millions of vectors, they sacrifice a small amount of precision. Given our dataset contained fewer than 10,000 distinct chunks, the computational cost of an exact search was negligible. This guaranteed that the system would always return the mathematically closest match, eliminating the risk of approximation errors.
+Chunking Strategy: We utilized a Hybrid Chunking Strategy to handle our heterogeneous data:
+Structured Data (CSV): We employed semantic row based chunking. Instead of treating columns as separate entities, we concatenated the Symptom, Severity, and Treatment columns into a single string per row. This prevents the "split-context" problem where a standard character splitter might separate a symptom from its required treatment.
+Unstructured Data (PDF): For the First Aid Quick Guide, we used pypdf to extract text and applied a recursive character text splitter with a chunk size of 512 tokens and an overlap of 50 tokens. The overlap was crucial for maintaining context across sentence boundaries, ensuring instructions like "Do NOT apply ice" were not cut off.
+**B. Retrieval Quality and Failure Analysis**
+Success Case:
+Query: "What should I do for a minor burn?"
+Result: The system retrieved the BURN_MINOR row from the CSV (instruction: "cool water for 10 mins") and a specific "Thermal Burns" section from the PDF (instruction: "remove jewelry").
+Analysis: This demonstrated the power of the hybrid retrieval approach. The FAISS index successfully ranked both the structured clinical row and the unstructured advice highly, synthesizing a comprehensive answer. The Euclidean distance score was approximately 0.24, indicating a very strong semantic match.
+Failure Case:
+Query: "My skin is red and itchy."
+Result: The system retrieved instructions for both "Insect Bite" and "Contact Rash" (poison ivy) because both entries prominently featured the keywords "red" and "itchy."
+Analysis: This highlights a challenge with overlapping symptoms known as "ambiguity failure." Because the embedding model prioritizes semantic similarity, it correctly identified that the user's symptoms map strongly to multiple distinct conditions. However, without a conversational agent to ask clarifying questions (e.g., "Did you touch a plant?" or "Did you feel a sting?"), the system simply dumped a "bag" of potential treatments on the user. In a medical context, this is suboptimal because treating an insect bite is different from treating a chemical rash. It underscores the limitation of a pure semantic search engine: it lacks the diagnostic reasoning required to narrow down differential diagnoses.
 
-**Model Choices:**
-We selected `BAAI/bge-small-en-v1.5` for our embedding model. This model offers an excellent balance of speed and accuracy (384 dimensions), which is essential for running on a CPU-only environment like the requested 16GB VM. We avoided larger models to ensure the API latency remained low (under 1 second).
+Edge Case Handling: When users asked out-of-domain questions like "How do I fix a flat tire?", the vector search returned results with distance scores exceeding 1.0. We implemented a strict application-side logic: if the top result's distance > 0.7, the system returns "I cannot find information on that." This simple threshold acted as an effective safety guardrail against relevance failure.
 
-**Chunking Strategy:**
-We used a hybrid chunking strategy. For the CSV data, we treated each row (Symptom/Treatment) as a single distinct document to preserve the structured nature of the data. For the PDF and Text files, we used paragraph-level chunking. This ensures that when a user asks about "Cuts," they get the specific treatment row rather than a fragmented sentence.
+**C. API and Engineering Challenges**
+1. Data Inconsistency & Schema Mapping: Our most significant engineering hurdle was handling the erratic schema of our source CSVs. The raw data contained inconsistent column names (e.g., "Trtmt" vs "Treatment") and null values in critical fields like "Severity." This caused the ingestion script to fail silently or produce vector embeddings for empty strings, which polluted the search index. We resolved this by implementing a rigorous validation step in ingest.py. We added logic to drop rows with null treatments and enforced a standardized schema before embedding. This required us to iterate on the data pipeline multiple times, proving that robust ETL is a prerequisite for any functional RAG system.
 
-## B. Retrieval Quality & Failure Analysis
-**Success Case:**
-When querying *"How do I treat a cut?"*, the system successfully retrieved the `CUT_MINOR` row from our ETL dataset. The Euclidean distance score was low (indicating high similarity), and the system correctly prioritized this over less relevant FAQ entries.
+2. Cross-Platform Compatibility: We faced repeated ModuleNotFoundError issues regarding faiss-cpu. The binary wheels for FAISS differ significantly between macOS (ARM64) and Linux (x86). Code that ran locally on a Mac often crashed immediately in the cloud environment. We solved this by strictly pinning versions in requirements.txt and relying on the standardized Linux container in Codespaces to ensure the build was reproducible across different machines.
 
-**Failure Case:**
-Early in testing, we found that vague queries like *"It hurts"* performed poorly. The vector search would retrieve random entries containing the word "pain" rather than asking clarifying questions. To mitigate this, we plan to improve the system prompt to encourage the model to state "I need more information" if the distance score is too high.
+3. Memory Management: In our initial implementation, the application loaded the 500MB embedding model inside the API route handler. This meant the server attempted to reload the model from disk for every single incoming request, causing latency to spike to over 5 seconds and eventually crashing the worker due to memory exhaustion. We refactored the architecture to use a global load_resources() function, which loads the model and index into memory once at startup. This increased boot time to ~30 seconds but reduced per-request latency to <100ms.
 
-## C. API & Engineering Challenges
-The most significant engineering challenge was the **environment configuration**. We initially attempted to build the system on Google Colab, but we encountered blocking issues where the Flask server would freeze the notebook cell, preventing us from running test queries.
-
-**The Fix:**
-We migrated to a containerized environment (GitHub Codespaces) and utilized `faiss-cpu` for vector storage. We also encountered a `ModuleNotFoundError` because the base environment lacked certain build tools, which we resolved by pinning specific versions in `requirements.txt`.
-
-**Latency:**
-On the CPU environment, the embedding generation takes approximately 0.4 seconds, and the vector search is instantaneous (<0.01s). The only bottleneck is the initial model loading time at startup (~30 seconds), which we solved by loading the model globally on app launch rather than per request.
-
-## D. Team Collaboration
-* **[Your Name]:** Handled the ETL process (cleaning the CSV), the Flask API implementation, and the server setup.
-* **[Partner Name (or You if solo)]:** Worked on the RAG pipeline logic (`ingest.py`) and the data gathering.
-* We used Git for version control, pushing changes to the `main` branch after verifying they worked in the test environment.
+**D. Team Collaboration**
+Nitish Kannan (Backend Lead): Nitish was responsible for the "serving" layer. He built the Flask API structure, defined the JSON schema for request/response objects, and managed the deployment environment. He also handled the curl testing and ensured the requirements.txt file was compatible with the Linux environment.
+Keegan Jewell (Data Lead): Keegan managed the "ingestion" layer. He sourced the supplementary PDF data, wrote the cleaning scripts to standardize the CSV headers (removing null columns), and optimized the ingest.py chunking logic.
+Workflow: We adopted a feature branch workflow. Nitish worked on feature/api-dev while Keegan worked on feature/data-pipeline. We maintained a protected main branch that was always deployable.
+Conflict Resolution: We encountered a major merge conflict in the dependencies file when we both added different libraries simultaneously. We resolved this by manually consolidating the library versions and testing the build in a fresh environment to ensure no conflicts remained.
+Lesson Learned: The biggest lesson was that "clean data beats complex models." No amount of vector index tuning could fix our initially dirty CSV data. We had to return to the ETL phase to standardize our "Severity" columns, proving that data quality is the bottleneck in RAG systems.

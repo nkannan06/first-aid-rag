@@ -1,74 +1,53 @@
-from flask import Flask, request, jsonify
 import os
-import faiss
-import pandas as pd
-import numpy as np
-from sentence_transformers import SentenceTransformer
+import sys
+from flask import Flask, request, jsonify, render_template
+
+# Ensure we can import from rag_pipeline
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+from rag_pipeline.ingest import load_resources, retrieve_context
 
 app = Flask(__name__)
 
-# --- CONFIGURATION ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-RAG_DIR = os.path.join(BASE_DIR, "..", "rag_pipeline")
-INDEX_PATH = os.path.join(RAG_DIR, "faiss_index.bin")
-TEXT_PATH = os.path.join(RAG_DIR, "indexed_text.csv")
+# Load AI Brain once at startup
+print("⏳ Starting Server & Loading Resources...")
+resources = load_resources()
 
-# Global Variables
-model = None
-index = None
-text_df = None
-
-def load_resources():
-    global model, index, text_df
-    print("⏳ Starting Server & Loading Resources...")
-    model = SentenceTransformer('BAAI/bge-small-en-v1.5')
-    
-    if os.path.exists(INDEX_PATH) and os.path.exists(TEXT_PATH):
-        index = faiss.read_index(INDEX_PATH)
-        text_df = pd.read_csv(TEXT_PATH)
-        print("✅ Resources Loaded Successfully!")
-    else:
-        print("⚠️ WARNING: Index not found. Run ingest.py first!")
-
-# Load on startup
-load_resources()
+@app.route('/')
+def home():
+    # This serves the new HTML file
+    return render_template('index.html')
 
 @app.route('/api/ask', methods=['POST'])
 def ask():
-    if not request.json or 'question' not in request.json:
-        return jsonify({"error": "Missing 'question' in JSON"}), 400
+    data = request.json
+    query = data.get('question', '')
     
-    question = request.json['question']
-    
-    # 1. Embed Question
-    q_emb = model.encode([question], convert_to_numpy=True)
-    
-    # 2. Search Index (Top 3)
-    k = 3
-    distances, indices = index.search(q_emb, k)
-    
-    # 3. Retrieve Context
-    results = []
-    context_str = ""
-    
-    for idx in indices[0]:
-        if idx < len(text_df):
-            chunk = str(text_df.iloc[idx]['text'])
-            results.append({
-                "id": "First Aid Database",
-                "snippet": chunk[:300] + "..." # Truncate for display
-            })
-            context_str += chunk + "\n---\n"
+    if not query:
+        return jsonify({"error": "No question provided"}), 400
 
-    # 4. Generate Answer (Simulated for Speed/Reliability in Codespaces)
-    # Ideally, you pass 'context_str' to a local LLM here. 
-    # For the assignment submission reliability, we return the grounded context.
-    final_answer = f"Based on the first aid guidelines:\n\n{context_str[:500]}\n...(See sources for more)"
+    # 1. Retrieve relevant info
+    results = retrieve_context(query, resources)
+    
+    # 2. Check if we found anything good (Distance threshold logic)
+    # If the best result is too far away (distance > 0.7), we say "I don't know"
+    # Note: resources['index'] isn't directly used here, retrieve_context handles it.
+    
+    if not results or results[0]['distance'] > 0.7:
+        return jsonify({
+            "answer": "I cannot find information on that in the First Aid Guide. Please call emergency services if this is urgent.",
+            "sources": []
+        })
 
+    # 3. Formulate Answer (Deterministic RAG)
+    # We combine the top result text into a readable answer.
+    best_match = results[0]
+    answer = f"Based on the first aid guidelines:\n\n{best_match['text']}\n...(See sources for more)"
+    
     return jsonify({
-        "answer": final_answer,
+        "answer": answer,
         "sources": results
     })
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
