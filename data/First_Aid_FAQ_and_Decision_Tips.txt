@@ -1,0 +1,121 @@
+First Aid FAQ and Decision Tips
+This document gives short, practical answers to common questions about basic first aid, especially for mild problems such as minor cuts, burns, sprains, and simple insect bites.
+How do I decide if something is "minor" enough for home first aid?
+For this, a situation is considered "minor" if all of the following are true:
+The person is awake, talking, and breathing normally.
+Bleeding (if any) is slow, small in amount, and can be controlled with direct pressure.
+Pain is mild to moderate and not rapidly getting worse.
+The injured area is small and limited (for example, a small cut, small burn, or small rash patch).
+There are NO signs of emergency: no severe trouble breathing, chest pain, sudden confusion, or loss of consciousness.
+If any of those “big red flag” symptoms appear, it should be treated as a possible emergency, not just a minor first-aid situation.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR, BURN_MILD, BRUISE_SIMPLE
+How long should I apply pressure to a minor cut before worrying? [CUT_MINOR]
+For a small cut or scrape:
+Apply firm, direct pressure with a clean cloth or bandage.
+Hold continuous pressure for around 10–15 minutes before checking.
+Do not keep lifting the cloth every few seconds to “peek,” because that can restart bleeding.
+If bleeding does not slow and clearly improve after around 10–15 minutes of steady pressure, or if blood is soaking through multiple bandages, the cut may not be minor and you should seek medical help.
+Related condition: CUT_MINOR
+How long should I cool a mild burn with water? [BURN_MILD, SUNBURN_MILD]
+For a small, mild burn with no blisters:
+Move away from the heat source immediately.
+Cool the burned area with cool (not ice-cold) running water or a cool, wet cloth.
+A common recommendation is to cool for about 10–20 minutes or until pain has eased.
+Cooling helps remove heat from the skin and may limit how deep the burn goes. Do not use ice directly on the skin.
+Related conditions: BURN_MILD, SUNBURN_MILD
+When should I worry about infection after a minor skin injury? [CUT_MINOR, PUNCTURE_MINOR, BLISTER_SMALL, SPLINTER_SMALL]
+Infection risk increases if:
+Redness spreads outward from the wound.
+The area feels increasingly warm, swollen, or painful.
+Pus or cloudy fluid appears.
+The person develops fever, chills, or feels generally unwell.
+Mild soreness and a small red rim can be normal in the first day, but infection usually looks like symptoms getting steadily worse, not better.
+If you see signs of infection, especially spreading redness or fever, you should seek medical advice.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR, BLISTER_SMALL, SPLINTER_SMALL
+How do I decide whether a burn might need professional care? [BURN_MILD]
+Even if a burn starts out looking small, you should consider professional help more urgently when:
+The burned area is larger than the palm of the person’s hand.
+The burn is on the face, hands, feet, genitals, or over a major joint.
+The skin looks charred, very pale, or leathery.
+There are many blisters or blisters that form very quickly.
+Pain is severe or the person seems very ill.
+Small, red, non-blistering burns on limited areas can often be managed with first-aid cooling and gentle protection, but large or deep burns deserve urgent medical evaluation.
+Related condition: BURN_MILD
+What is the big difference between a cut and a puncture in first-aid terms? [CUT_MINOR, PUNCTURE_MINOR]
+A minor cut or scrape (CUT_MINOR) is usually a shallow injury that affects the surface of the skin and may bleed more visibly.
+A puncture wound (PUNCTURE_MINOR) is a deep, narrow path created by something like a nail, thorn, or tack.
+Puncture wounds can sometimes bleed less on the surface but carry a higher risk of infection, especially if the object was dirty or rusty. Because of that, cleaning and tetanus protection are especially important for puncture wounds.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR
+What should I do if I am not sure whether to continue a sport after an ankle injury? [SPRAIN_ANKLE_MILD]
+As a general rule for this project:
+If the person cannot put weight on the injured ankle at all, or pain is sharp and severe, they should stop the activity and may need medical assessment.
+If walking is possible but painful and the ankle is swollen or tender, rest and basic first aid (RICE) are appropriate.
+Continuing high-impact activity on a clearly painful ankle increases the risk of further damage.
+When in doubt, it is safer to stop the activity and rest rather than pushing through significant pain.
+Related condition: SPRAIN_ANKLE_MILD
+When is a nosebleed likely to be “simple” versus more serious? [NOSEBLEED_SIMPLE]
+A nosebleed is more likely to be “simple” when:
+It comes from one side or the front of the nose.
+The person can sit up, lean forward, and breathe comfortably.
+Bleeding slows or stops within about 10–20 minutes using proper pressure.
+A nosebleed deserves more urgent care if:
+Bleeding is very heavy or continues despite correct pressure.
+It follows a major facial or head injury.
+The person has trouble breathing, feels very faint, or is on blood-thinning medications.
+Related condition: NOSEBLEED_SIMPLE
+What should I do if I am not sure whether someone fainted or had a seizure? [FAINTING_BRIEF]
+This project’s content focuses on brief fainting with quick recovery, not seizures. In real life:
+Fainting (syncope) often happens when blood pressure drops. The person usually becomes pale, limp, and loses consciousness briefly, then wakes up quickly when lying flat.
+A seizure can include rigid or jerking movements, confusion afterward, or loss of bladder control.
+If you are unsure whether it was a fainting episode or a seizure, or if the person does not wake up quickly and normally, this should be treated as a medical emergency.
+Related condition: FAINTING_BRIEF
+What are some practical signs that dehydration is getting more serious? [DEHYDRATION_MILD]
+Mild dehydration may cause:
+Thirst
+Dry mouth
+Darker-than-usual urine
+Mild fatigue or lightheadedness
+More serious dehydration can be suggested by:
+Very little or no urine for many hours
+Very dry mouth and tongue
+Rapid heartbeat or breathing
+Confusion, dizziness, or fainting
+Mild dehydration can often be improved by resting in a cool place and drinking fluids slowly. Signs of more severe dehydration should prompt medical evaluation.
+Related condition: DEHYDRATION_MILD
+How can I tell if a bite or sting is staying “local” versus turning into a possible allergic emergency? [INSECT_BITE_MILD, RASH_CONTACT_MILD]
+A local reaction usually looks like:
+Redness, mild swelling, and itching around the bite or sting site only.
+Symptoms mainly focused in that small skin area.
+Possible signs of a more serious allergic reaction include:
+Swelling of the lips, tongue, or throat
+Trouble breathing or wheezing
+Tightness in the chest
+Widespread hives or rash, not just at the sting site
+Feeling faint or like you might pass out
+Any breathing difficulty, throat swelling, or feeling faint after a bite or sting should be treated as a potential emergency.
+Related conditions: INSECT_BITE_MILD, RASH_CONTACT_MILD
+What should I remember about eyes and foreign particles? [EYE_FOREIGN_SMALL]
+Simple “dust-in-eye” situations may improve after gentle rinsing with clean water or saline, and discomfort should start to settle.
+However, you should not treat it as minor if:
+Pain is strong or not improving.
+Vision is clearly affected.
+Something appears to be embedded in the eye.
+Chemicals splashed into the eye.
+Eyes are delicate, and it is safer to seek professional eye care when symptoms are significant or persistent.
+Related condition: EYE_FOREIGN_SMALL
+Are there general “don’ts” that apply to most minor injuries? [Multiple]
+For many basic first-aid situations in this project, these general “do not” rules apply:
+Do not ignore new or worsening symptoms (especially fever, spreading redness, or severe pain).
+Do not use unsterile sharp tools to dig into skin or wounds.
+Do not apply ice directly to skin for long periods.
+Do not use harsh chemicals on open wounds.
+Do not delay seeking help if you feel something is “seriously wrong.”
+These rules are not complete, but they provide a simple safety net for common mild problems.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR, BURN_MILD, BLISTER_SMALL, SPRAIN_ANKLE_MILD, INSECT_BITE_MILD, DEHYDRATION_MILD, and others.
+Project Note: How this FAQ fits into the system
+In this data project:
+The CSV file provides structured information: condition IDs, categories, severity, and concise step lists.
+The PDF guide provides detailed human-readable walkthroughs for each condition.
+This FAQ text file provides short, cross-cutting explanations that connect conditions, describe red flags, and explain decision points.
+Together, these sources allow a retrieval-augmented model to answer questions both at the specific level (“What do I do for a minor cut?”) and at the reasoning level (“How do I know if this is still minor or not?”).
+This document is educational only and not medical advice.

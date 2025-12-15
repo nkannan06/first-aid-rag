@@ -1,0 +1,395 @@
+text
+"CUT_MINOR | Minor cut or scrape | Injury | mild | Small, shallow cut; light bleeding; skin surface only; person awake and breathing normally. | Wash your hands if possible. Gently rinse the area with clean running water. If needed, clean around (not inside) the wound with mild soap. Apply gentle pressure with a clean cloth until bleeding slows or stops. Cover with a clean bandage or dressing. | Do not use harsh chemicals directly in the wound. Do not pick at scabs. Do not ignore increasing redness, warmth, swelling, or pus. | If bleeding does not stop after about 10–15 minutes of firm pressure, if the cut is deep, gaping, on the face, caused by a very dirty or rusty object, or if signs of infection appear. | Keep the area clean and dry. Change the bandage if it becomes wet or dirty. Watch for redness, swelling, warmth, pus, or fever. | Basic first-aid guide (general info)."
+"BURN_MILD | Mild burn (no blisters) | Injury | mild | Red, painful skin in a small area; top layer of skin affected; no blisters; usually from brief contact with a hot object, liquid, or steam. | Move away from the heat source. Cool the area with cool (not ice-cold) running water or a cool, wet cloth for about 10–20 minutes or until pain improves. Gently remove rings or tight items near the burn if possible. After cooling, cover lightly with a clean, non-stick dressing. | Do not apply ice directly to the burned skin. Do not use butter, oils, or greasy home remedies. Do not break any blisters that appear later. | If the burn is larger than the person’s palm, on the face, hands, feet, genitals, or over a major joint, or if blisters, charred skin, severe pain, or signs of infection are present. | Keep the area clean and protected. Avoid friction and sun on the burned skin. Use appropriate over-the-counter pain relief if advised. Watch for spreading redness or pus. | Basic first-aid guide (general info)."
+"PUNCTURE_MINOR | Minor puncture wound (small nail or thorn) | Injury | mild | Small, deep point-like injury from a nail, thorn, tack, or similar object; mild to moderate pain; limited bleeding. | Wash your hands. Apply gentle pressure with a clean cloth or bandage to stop bleeding. Rinse the wound under clean running water for several minutes. If small debris is on the surface, gently remove it with clean tweezers. Cover with a clean bandage. | Do not dig deeply into tissue with unsterile tools. Do not ignore a puncture from a very dirty or rusty object. Do not delay checking tetanus status if needed. | If you cannot clean the wound well, if something is embedded and will not come out easily, if pain, swelling, or redness worsen, if there are signs of infection, or if tetanus vaccination may be out of date. | Keep the area clean and covered. Watch for increasing pain, redness, warmth, pus, or fever. Follow local guidance regarding tetanus vaccination. | Basic first-aid guide (general info)."
+"SUNBURN_MILD | Mild sunburn | Injury | mild | Pink to red, warm, painful skin after sun exposure; no severe blistering; person otherwise feels fairly well. | Get out of the sun into shade or indoors. Cool the skin with cool baths, showers, or cool, damp cloths. Drink fluids to maintain hydration. Apply soothing, non-irritating moisturizer or aloe gel to intact skin. Use locally recommended over-the-counter pain relievers if appropriate. | Do not pop blisters if they form. Do not keep exposing burned skin to the sun. Do not apply harsh products that sting or further irritate the skin. | If large areas are blistered, the person feels very unwell (fever, chills, confusion, vomiting), or if pain is severe and not improving. | Keep sunburned skin protected from further sun with clothing or shade. Continue gentle moisturizers as needed. Watch for infection if blisters break. | nan"
+"BLISTER_SMALL | Small friction blister | Injury | mild | Small fluid-filled bubble on the skin from rubbing (e.g., shoes or tools); mild to moderate pain; limited redness; no large area of broken skin. | If the blister is intact and small, protect it with a clean non-stick bandage or padding and reduce friction. If it has already broken, gently wash with mild soap and water, let fluid drain, and cover with a sterile non-stick dressing. | Do not deliberately remove the overlying skin flap. Do not puncture large blisters with unsterile tools. Do not ignore increasing redness, warmth, or pus. | If the blister is very large, extremely painful, in a high-pressure area you must keep using, or if there are signs of infection such as spreading redness, warmth, or pus. | Keep the area clean, dry, and protected from rubbing. Change dressings as needed. Adjust footwear, socks, or equipment to reduce friction in the future. | nan"
+"NOSEBLEED_SIMPLE | Simple nosebleed | Injury | mild | Bleeding from one or both nostrils; person awake and breathing normally; often after nose picking, dry air, or minor trauma. | Have the person sit upright and lean slightly forward. If advised, gently blow the nose once to clear clots. Pinch the soft part of the nose just below the bony bridge between thumb and finger. Maintain steady pressure for about 10–15 minutes while breathing through the mouth. | Do not tilt the head back. Do not stuff large objects deep into the nose. Do not keep checking too early by repeatedly releasing pressure. | If bleeding lasts longer than about 20–30 minutes despite proper pressure, if bleeding is very heavy, follows significant head or facial injury, or if the person feels faint, weak, or has trouble breathing. | After bleeding stops, avoid forceful nose blowing or heavy lifting for a few hours. Keep the inside of the nose slightly moist as locally advised (e.g., saline spray, humidifier). | nan"
+"SPRAIN_ANKLE_MILD | Mild ankle sprain | Injury | mild | Twisted ankle with pain, mild to moderate swelling, and stiffness; able to bear some weight but uncomfortable; no obvious deformity. | Use the RICE approach: Rest the ankle and avoid painful activity; Ice the area with a wrapped cold pack for about 15–20 minutes at a time with breaks; apply light Compression with an elastic bandage (not too tight); Elevate the ankle above heart level when possible. | Do not continue intense activity that causes significant pain. Do not apply ice directly to bare skin for long periods. Do not wrap so tightly that numbness or pale toes occur. | If the person cannot bear weight at all, pain is severe, swelling is large, the ankle looks deformed, or if symptoms do not start to improve over several days. | Gradually return to activity as pain allows. Perform range-of-motion and strengthening exercises if advised. Use supportive shoes or braces as needed. | nan"
+"BRUISE_SIMPLE | Simple bruise (contusion) | Injury | mild | Blue, purple, or greenish discoloration under the skin after a bump or impact; tenderness; mild swelling; skin intact. | If possible, elevate the bruised area above heart level. Apply a cold pack wrapped in a thin cloth for up to about 15–20 minutes at a time, repeating every few hours during the first day or two to reduce pain and swelling. | Do not apply ice directly to bare skin. Do not massage a very fresh, painful bruise aggressively. Do not ignore rapidly worsening swelling, pain, or loss of function. | If bruising appears without clear cause, is very large and painful, follows significant trauma, or is accompanied by difficulty moving the limb, severe pain, or suspicion of a fracture. | After a couple of days, warm compresses may help the bruise fade. Watch for unusual or frequent bruising patterns that might need medical evaluation. | nan"
+"INSECT_BITE_MILD | Mild insect bite or sting (local reaction) | Injury | mild | Redness, mild swelling, and itching around a bite or sting; discomfort mainly at the site; breathing normal; no tongue or throat swelling. | Move to a safe area away from more insects. If a stinger is visible on the skin surface, gently scrape or lift it away. Wash the area with soap and water. Apply a cool pack or cool, damp cloth for about 10–20 minutes to reduce pain and swelling. Use appropriate over-the-counter anti-itch products if advised. | Do not scratch hard enough to break the skin. Do not squeeze or pinch the venom sac on a stinger. Do not ignore any signs of trouble breathing or widespread hives. | Seek emergency care immediately if there is trouble breathing, wheezing, swelling of lips, tongue, or throat, chest tightness, or feeling faint. Seek non-emergency medical advice if local redness and swelling keep worsening or pain is significant. | Continue cool compresses and gentle skin care until symptoms settle. Avoid known insect triggers and use recommended protective clothing or repellents in the future. | nan"
+"HEAT_EXHAUSTION_MILD | Mild heat exhaustion | Environment | mild | Feeling hot, weak, dizzy, or very tired after heat exposure; heavy sweating; headache; nausea; usually still alert and able to drink. | Move the person to a cooler or shaded place or into air conditioning if available. Have them lie down with legs slightly raised if possible. Loosen or remove heavy clothing. Offer cool water or an appropriate electrolyte drink in small, frequent sips. Cool the body with cool, damp cloths, spray, or fanning. | Do not give very hot or alcoholic drinks. Do not leave the person alone if they feel very unwell. Do not ignore worsening confusion, vomiting, or difficulty walking. | Seek emergency care if the person becomes confused, cannot drink, vomits repeatedly, stops sweating despite heat, develops very hot, dry skin, or if symptoms do not start to improve within about an hour. | After recovery, rest and maintain good hydration. Avoid intense heat exposure for a while and plan shade, fluids, and breaks to prevent recurrence. | nan"
+"FAINTING_BRIEF | Brief fainting (person wakes quickly) | Medical | mild | Person briefly loses consciousness and then wakes up within about a minute; may feel lightheaded, weak, or sweaty; breathing normal when lying down. | If someone faints, gently help them lie flat on their back if it is safe and there is no obvious serious injury. Raise their legs slightly above heart level if possible. Loosen tight clothing at the neck or waist. Check breathing and responsiveness. Once awake, have them sit for a while and stand slowly. | Do not shake the person or pour liquid into their mouth while unconscious. Do not move them if you suspect serious head, neck, or spine injury. Do not let them stand suddenly. | Call emergency services if the person does not wake within about a minute, has chest pain, trouble breathing, seizure-like movements, a serious injury from the fall, or repeated fainting episodes. | Encourage rest and hydration if appropriate. They should follow up with a health professional if fainting is unexplained, recurrent, or associated with other concerning symptoms. | nan"
+"DEHYDRATION_MILD | Mild dehydration | Medical | mild | Thirst, dry mouth, reduced or darker urine, feeling tired or a bit lightheaded; usually still alert and able to drink. | Move to a cool or shaded place. Have the person sip water slowly and regularly. If recommended locally, use an oral rehydration or electrolyte drink, especially after heavy sweating, vomiting, or diarrhea. Encourage rest until feeling better. | Do not continue intense physical activity in the heat while feeling dehydrated. Avoid alcohol and very sugary drinks as the main way to rehydrate. Do not ignore worsening confusion or very low urine output. | Seek medical help if the person cannot keep fluids down, feels very weak or confused, has signs of more severe dehydration (very little or no urine, very dry mouth and tongue, rapid heartbeat or breathing, or fainting), or if symptoms do not improve after drinking. | Aim to drink fluids regularly, especially in hot weather or during illness or exercise. Monitor urine color as a rough guide; very dark urine can indicate the need for more fluids. | nan"
+"EYE_FOREIGN_SMALL | Small foreign particle in eye (no major injury) | Injury | mild | Sensation of something in the eye such as dust or sand; tearing; redness; uncomfortable but usually able to keep the eye open; vision mostly preserved. | Wash your hands. Rinse the eye gently with clean, lukewarm water or saline using an eye cup, a small clean glass, or a gentle stream. Blink several times during rinsing to help dislodge the particle. Remove contact lenses if worn before or during rinsing. | Do not rub the eye. Do not try to remove objects that are stuck into the eye or that you cannot see clearly. Do not use sharp tools or cotton swabs on the eye surface. | Seek urgent medical or eye care if pain is severe, vision is affected, something appears embedded, chemicals are involved, or symptoms persist after thorough rinsing. | Avoid rubbing the eye while it recovers. Use any eye drops only as recommended by a professional. Wear appropriate eye protection during high-risk tasks in the future. | nan"
+"SPLINTER_SMALL | Small splinter or superficial foreign object in skin | Injury | mild | Small piece of wood, glass, or thorn just under or slightly above the skin surface; local discomfort; usually visible. | Wash your hands. Rinse the eye gently with clean, lukewarm water or saline using an eye cup, a small clean glass, or a gentle stream. Blink several times during rinsing to help dislodge the particle. Remove contact lenses if worn before or during rinsing. | Do not dig deeply into the skin with needles or unsterile tools. Do not try to remove large or deeply embedded objects. Do not ignore increasing redness, swelling, or pus. | Seek medical help if the object is deeply embedded, near the eye, in a joint, or cannot be removed easily, or if the area becomes more painful, red, or swollen over time. | Keep the area clean and dry after removal. Watch for signs of infection. Follow local guidance regarding tetanus vaccination if applicable. | nan"
+"RASH_CONTACT_MILD | Mild contact rash (local skin irritation/allergic) | Medical | mild | Red, itchy patches or streaks where skin touched an irritant or allergen (plants, soaps, metals); no trouble breathing; no major tongue or throat swelling. | Rinse the affected skin with lukewarm water and mild soap soon after suspected contact if possible. Avoid further contact with the suspected irritant or allergen. Apply cool, wet compresses to soothe the area. Use appropriate over-the-counter anti-itch lotions or creams on intact skin if advised. | Do not keep scratching until the skin breaks. Do not use strong topical products on open or severely irritated skin without professional guidance. Do not ignore a spreading rash with systemic symptoms. | Seek medical help if the rash is widespread, on the face or genitals, very painful, shows signs of infection, or if there is trouble breathing, swelling of lips, tongue, or throat, or dizziness that could indicate a more serious reaction. | Continue avoiding the suspected trigger. Use gentle skin care and loose clothing that does not rub the rash. Follow any medical advice about allergy testing or treatment if given. | nan"
+"How  to  Use  This  Guide  
+●  Each  section  focuses  on  one  common  problem  (cut,  burn,  sprain,  etc.).  ●  For  every  problem,  you’ll  see:  ○  Common  signs  –  what  it  tends  to  look  like  ○  What  to  do  now  –  basic  first-aid  steps  ○  What  not  to  do  –  things  that  might  make  it  worse  ○  When  to  get  help  –  red  flags  for  seeing  a  doctor  or  calling  emergency  services  ●  Condition  IDs  (like  CUT_MINOR)  match  the  IDs  in  the  CSV  table  used  by  the  model.  
+ 
+General  Emergency  Red  Flags  
+Call  your  local  emergency  number  or  seek  urgent  care  right  away  if  someone  has:  
+●  Trouble  breathing,  gasping,  or  noisy  breathing  ●  Chest  pain  or  pressure  ●  Sudden  confusion,  difficulty  speaking,  or  trouble  staying  awake  ●  Weakness  on  one  side  of  the  body  or  drooping  face  ●  Very  heavy  or  uncontrolled  bleeding  ●  Severe  burns  or  large  areas  of  burned  skin  ●  Loss  of  consciousness  that  does  not  quickly  improve  ●  Any  situation  that  feels  like  a  medical  emergency  
+This  guide  does  not  cover  all  emergencies.  
+ 
+1.  Minor  Cuts  and  Scrapes  (CUT_MINOR)  
+Common  signs  
+●  Small,  shallow  cut  or  scrape  ●  Light,  controllable  bleeding  ●  Skin  surface  only;  person  awake  and  talking  normally  
+What  to  do  now  
+●  Wash  or  sanitize  your  own  hands  if  possible.  ●  Gently  rinse  the  wound  with  clean  running  water.  ●  Clean  around  (not  deep  inside)  the  cut  with  mild  soap.  "
+"●  Press  a  clean  cloth  or  bandage  on  the  area  until  bleeding  slows  or  stops.  ●  Cover  with  a  small,  clean  bandage  or  dressing.  
+What  not  to  do  
+●  Don’t  pour  harsh  chemicals  directly  into  the  wound.  ●  Don’t  blow  on  the  wound.  ●  Don’t  pick  at  scabs  once  they  form.  
+When  to  get  help  
+●  Bleeding  does  not  slow  or  stop  after  about  10–15  minutes  of  firm  pressure.  ●  The  cut  is  deep,  gaping,  or  on  the  face .  ●  The  injury  was  caused  by  a  very  dirty  or  rusty  object ,  or  an  animal  bite.  ●  You  notice  signs  of  infection:  spreading  redness,  warmth,  pus,  or  fever.  
+ 
+2.  Minor  Puncture  Wound  (PUNCTURE_MINOR)  
+Common  signs  
+●  Small  “pin-hole”  type  wound  from  a  nail,  thorn,  tack,  etc.  ●  Mild  to  moderate  pain  ●  Often  not  much  bleeding  
+What  to  do  now  
+●  Wash  your  hands.  ●  Press  gently  with  a  clean  cloth  or  gauze  if  it’s  bleeding.  ●  Rinse  the  area  under  clean  running  water  for  several  minutes.  ●  If  there’s  small  surface  debris,  remove  it  gently  with  clean  tweezers .  ●  Cover  with  a  small  clean  bandage.  
+What  not  to  do  
+●  Don’t  dig  deeply  into  the  skin  with  needles  or  unsterile  tools.  ●  Don’t  ignore  a  puncture  from  a  dirty  or  rusty  object.  ●  Don’t  skip  checking  tetanus  status  if  that’s  recommended  where  you  live.  
+When  to  get  help  
+●  You  can’t  clean  the  wound  well  or  something  seems  stuck  inside.  "
+"●  Pain,  swelling,  or  redness  keeps  getting  worse ,  not  better.  ●  You  see  pus,  streaks  of  redness,  or  develop  a  fever.  ●  You’re  unsure  whether  your  tetanus  shots  are  up  to  date.  
+ 
+3.  Mild  Burn  –  No  Blisters  (BURN_MILD)  
+Common  signs  
+●  Red,  painful  patch  of  skin  in  a  small  area  ●  Top  layer  of  skin  involved  ●  No  blisters  yet  
+What  to  do  now  
+●  Move  away  from  the  heat  source.  ●  Cool  the  area  with  cool  (not  ice-cold)  running  water  or  a  cool,  wet  cloth  for  about  10–20  
+minutes
+.
+ ●  Remove  rings  or  tight  items  near  the  burned  area  if  possible  before  it  swells.  ●  After  cooling,  cover  very  lightly  with  a  clean,  non-stick  dressing  or  cloth.  
+What  not  to  do  
+●  Don’t  apply  ice  directly  to  the  burn.  ●  Don’t  use  butter,  oils,  or  greasy  home  remedies.  ●  Don’t  break  blisters  if  they  appear  later.  
+When  to  get  help  
+●  The  burn  is  larger  than  the  person’s  palm .  ●  It’s  on  the  face,  hands,  feet,  genitals,  or  a  major  joint .  ●  The  skin  looks  white,  charred,  or  very  deep.  ●  Pain  is  severe,  or  there  are  signs  of  infection.  
+ 
+4.  Mild  Sunburn  (SUNBURN_MILD)  
+Common  signs  
+●  Red,  warm,  sore  skin  after  sun  exposure  ●  Usually  no  severe  blistering  "
+"●  Person  otherwise  feels  okay  or  mildly  unwell  
+What  to  do  now  
+●  Get  out  of  the  sun  and  into  shade  or  indoors.  ●  Cool  the  skin  with  cool  showers,  baths,  or  damp  cloths.  ●  Drink  plenty  of  fluids  to  stay  hydrated.  ●  Apply  a  gentle  moisturizer  or  aloe  gel  to  unbroken  skin.  ●  Use  over-the-counter  pain  relief  if  recommended  in  your  area.  
+What  not  to  do  
+●  Don’t  keep  going  back  into  the  sun  with  burned  skin.  ●  Don’t  pop  blisters  on  purpose.  ●  Don’t  use  harsh  products  that  sting  or  irritate.  
+When  to  get  help  
+●  Large  areas  are  blistered.  ●  The  person  has  fever,  chills,  confusion,  or  vomiting .  ●  Pain  is  severe  and  not  improving.  
+ 
+5.  Small  Friction  Blister  (BLISTER_SMALL)  
+Common  signs  
+●  Small  bubble  of  clear  fluid  on  the  skin  ●  Caused  by  rubbing  (new  shoes,  tools,  etc.)  ●  Mild  to  moderate  soreness  
+What  to  do  now  
+●  If  the  blister  is  intact  and  small ,  leave  it  closed  and  protect  it:  ○  Cover  with  a  clean,  non-stick  bandage  or  padding.  ●  If  it  has  already  broken :  ○  Gently  wash  with  mild  soap  and  water.  ○  Let  the  fluid  drain.  ○  Cover  with  a  sterile,  non-stick  dressing.  
+What  not  to  do  "
+"●  Don’t  intentionally  rip  off  the  skin  over  the  blister.  ●  Don’t  puncture  big  blisters  with  dirty  tools.  ●  Don’t  ignore  increasing  redness,  warmth,  or  pus.  
+When  to  get  help  
+●  The  blister  is  very  large  or  extremely  painful.  ●  It’s  in  a  spot  you  absolutely  must  keep  using  (e.g.,  weight-bearing  area).  ●  There  are  signs  of  infection  (spreading  redness,  warmth,  pus,  fever).  
+ 
+6.  Simple  Nosebleed  (NOSEBLEED_SIMPLE)  
+Common  signs  
+●  Bleeding  from  one  or  both  nostrils  ●  Person  is  awake  and  breathing  normally  ●  Often  follows  nose  picking,  dry  air,  or  a  small  bump  
+What  to  do  now  
+●  Sit  upright  and  lean  slightly  forward ,  not  back.  ●  If  advised,  gently  blow  the  nose  once  to  clear  clots.  ●  Pinch  the  soft  part  of  the  nose  (just  below  the  bony  bridge)  between  thumb  and  finger.  ●  Maintain  steady  pressure  for  10–15  minutes  without  letting  go.  ●  Breathe  through  the  mouth.  
+What  not  to  do  
+●  Don’t  tilt  the  head  back  (blood  may  go  into  the  throat).  ●  Don’t  stuff  large  objects  deep  into  the  nostrils.  ●  Don’t  keep  releasing  pressure  every  few  seconds  to  check.  
+When  to  get  help  
+●  Bleeding  lasts  longer  than  about  20–30  minutes  despite  correct  pressure.  ●  Bleeding  is  very  heavy.  ●  It  follows  a  significant  head  or  facial  injury.  ●  The  person  feels  faint,  weak,  or  has  trouble  breathing.  
+ "
+"7.  Mild  Ankle  Sprain  (SPRAIN_ANKLE_MILD)  
+Common  signs  
+●  Twisted  ankle  with  pain  and  swelling  ●  Stiffness  and  difficulty  walking  ●  Able  to  bear  some  weight,  but  it  hurts  ●  No  obvious  deformity  
+What  to  do  now  –  RICE  
+●  Rest:  Avoid  running,  jumping,  or  sports.  ●  Ice:  Apply  a  cold  pack  wrapped  in  cloth  for  15–20  minutes  at  a  time.  ●  Compression:  Use  an  elastic  wrap  that’s  snug  but  not  cutting  off  circulation.  ●  Elevation:  Raise  the  ankle  above  the  heart  when  possible.  
+What  not  to  do  
+●  Don’t  keep  playing  or  walking  heavily  if  it  causes  strong  pain.  ●  Don’t  place  ice  directly  on  bare  skin  for  long  periods.  ●  Don’t  wrap  so  tightly  that  toes  become  numb,  tingly,  or  pale .  
+When  to  get  help  
+●  The  person  cannot  bear  weight  at  all.  ●  Pain  is  severe,  or  swelling  is  very  big.  ●  The  ankle  looks  crooked  or  misshapen.  ●  Symptoms  aren’t  improving  after  several  days.  
+ 
+8.  Simple  Bruise  (BRUISE_SIMPLE)  
+Common  signs  
+●  Blue,  purple,  or  greenish  discoloration  under  the  skin  ●  Soreness  and  mild  swelling  after  a  bump  or  hit  ●  Skin  surface  is  not  broken  
+What  to  do  now  
+●  If  possible,  elevate  the  bruised  area  above  the  level  of  the  heart.  ●  Apply  a  cold  pack  wrapped  in  a  thin  cloth  for  up  to  15–20  minutes  at  a  time.  "
+"●  Repeat  cold  applications  every  few  hours  during  the  first  day  or  two  as  needed.  
+What  not  to  do  
+●  Don’t  put  ice  directly  on  bare  skin.  ●  Don’t  massage  a  very  new,  painful  bruise  aggressively.  ●  Don’t  ignore  quickly  worsening  swelling,  pain,  or  loss  of  function.  
+When  to  get  help  
+●  Bruising  appears  with  little  or  no  clear  cause .  ●  The  bruise  is  very  large  or  extremely  painful.  ●  It  follows  a  big  fall  or  trauma  and  you  suspect  a  fracture.  ●  There  is  major  difficulty  moving  the  nearby  joint  or  limb.  
+ 
+9.  Mild  Insect  Bite  or  Sting  (INSECT_BITE_MILD)  
+Common  signs  
+●  Red,  itchy,  slightly  swollen  area  around  a  bite  or  sting  ●  Discomfort  mostly  at  the  site  ●  Breathing  is  normal;  no  swelling  of  lips,  tongue,  or  throat  
+What  to  do  now  
+●  Move  away  from  the  insects  or  nest.  ●  If  a  stinger  is  visible  on  the  skin,  gently  scrape  or  lift  it  away  (don’t  squeeze  a  venom  
+sac).
+ ●  Wash  the  area  with  soap  and  water.  ●  Apply  a  cool  pack  or  cool,  damp  cloth  for  10–20  minutes .  ●  Use  local  over-the-counter  anti-itch  products  if  appropriate.  
+What  not  to  do  
+●  Don’t  scratch  hard  enough  to  break  the  skin.  ●  Don’t  squeeze  the  stinger  between  fingers  and  push  venom  in.  ●  Don’t  ignore  any  signs  of  breathing  difficulty  or  spreading  hives.  
+When  to  get  help  
+●  Call  emergency  services  immediately  for:  "
+"○  Trouble  breathing,  wheezing,  chest  tightness  ○  Swelling  of  lips,  tongue,  throat,  or  face  ○  Feeling  faint  or  about  to  pass  out  ●  See  a  clinician  if  redness  and  swelling  keep  getting  worse  or  pain  is  significant.  
+ 
+10.  Mild  Heat  Exhaustion  (HEAT_EXHAUSTION_MILD)  
+Common  signs  
+●  Feeling  very  hot,  weak,  or  dizzy  after  heat  exposure  ●  Heavy  sweating  ●  Headache,  nausea,  or  cramps  ●  Usually  still  alert  and  able  to  drink  
+What  to  do  now  
+●  Move  the  person  to  a  cooler,  shaded,  or  air-conditioned  place.  ●  Have  them  lie  down  with  legs  slightly  raised  if  possible.  ●  Loosen  or  remove  heavy  or  tight  clothing.  ●  Offer  cool  water  or  an  electrolyte  drink  in  small,  frequent  sips .  ●  Cool  the  skin  with  damp  cloths,  spray,  or  a  fan.  
+What  not  to  do  
+●  Don’t  give  very  hot  or  alcoholic  drinks.  ●  Don’t  leave  the  person  alone  if  they  feel  very  ill.  ●  Don’t  ignore  worsening  confusion,  vomiting,  or  trouble  walking.  
+When  to  get  help  
+●  The  person  becomes  confused ,  cannot  drink,  or  vomits  repeatedly.  ●  They  stop  sweating  despite  heat  and  have  very  hot,  dry  skin.  ●  Symptoms  do  not  start  improving  within  about  an  hour.  
+ 
+11.  Brief  Fainting  Episode  (FAINTING_BRIEF)  
+Common  signs  
+●  Sudden  brief  loss  of  consciousness  "
+"●  Person  wakes  up  within  about  a  minute  ●  May  feel  lightheaded,  weak,  or  sweaty  before  or  after  ●  Breathing  is  normal  when  lying  down  
+What  to  do  now  
+●  If  safe,  help  the  person  lie  flat  on  their  back.  ●  Raise  their  legs  slightly  above  heart  level  if  possible.  ●  Loosen  tight  clothing  at  the  neck  or  waist.  ●  Check  breathing  and  responsiveness.  ●  Once  awake,  let  them  sit  first  and  then  stand  up  slowly.  
+What  not  to  do  
+●  Don’t  shake  the  person  or  splash  water  on  their  face.  ●  Don’t  give  food  or  drink  while  they  are  still  unconscious.  ●  Don’t  move  them  if  you  suspect  a  serious  head,  neck,  or  spine  injury.  
+When  to  get  help  
+●  The  person  does  not  wake  within  about  a  minute.  ●  They  have  chest  pain,  trouble  breathing,  or  seizure-like  movements.  ●  They  suffered  a  serious  injury  when  they  fell.  ●  Fainting  happens  repeatedly  or  for  unclear  reasons.  
+ 
+12.  Mild  Dehydration  (DEHYDRATION_MILD)  
+Common  signs  
+●  Thirst  and  dry  mouth  ●  Less  urine,  or  darker  than  usual  ●  Tiredness  or  mild  lightheadedness  ●  Usually  alert  and  able  to  drink  
+What  to  do  now  
+●  Move  to  a  cooler  or  shaded  spot.  ●  Sip  water  slowly  and  regularly.  ●  Use  an  oral  rehydration  solution  or  electrolyte  drink  if  recommended  (especially  after  
+sweating,
+ 
+vomiting,
+ 
+or
+ 
+diarrhea).
+ ●  Rest  until  feeling  better.  "
+"What  not  to  do  
+●  Don’t  keep  doing  intense  activity  in  heat.  ●  Don’t  rely  on  alcohol  or  very  sugary  drinks  as  the  main  fluid.  ●  Don’t  ignore  confusion,  worsening  dizziness,  or  almost  no  urine.  
+When  to  get  help  
+●  The  person  cannot  keep  fluids  down .  ●  They  feel  very  weak  or  confused.  ●  There  are  signs  of  more  severe  dehydration  (almost  no  urine,  very  dry  mouth  and  tongue,  
+very
+ 
+fast
+ 
+heartbeat
+ 
+or
+ 
+breathing,
+ 
+or
+ 
+fainting).
+ ●  Symptoms  do  not  improve  after  drinking  fluids.  
+ 
+13.  Small  Foreign  Particle  in  the  Eye  (EYE_FOREIGN_SMALL)  
+Common  signs  
+●  Feeling  like  there’s  sand  or  dust  in  the  eye  ●  Tearing  and  redness  ●  Eye  is  uncomfortable  but  usually  can  stay  open  ●  Vision  mostly  okay,  though  may  be  a  bit  blurry  
+What  to  do  now  
+●  Wash  your  hands.  ●  Rinse  the  eye  gently  with  clean,  lukewarm  water  or  saline.  ●  You  can  use  an  eye  cup,  a  small  clean  glass,  or  a  gentle  stream  of  water.  ●  Blink  repeatedly  while  rinsing  to  help  wash  out  the  particle.  ●  Remove  contact  lenses  before  or  during  rinsing.  
+What  not  to  do  
+●  Don’t  rub  or  scratch  the  eye.  ●  Don’t  try  to  remove  objects  that  appear  embedded  in  the  eye.  ●  Don’t  poke  the  eye  with  cotton  swabs  or  tools.  
+When  to  get  help  
+●  Pain  is  significant  or  vision  is  affected.  ●  Something  looks  stuck  in  the  eye.  "
+"●  Chemicals  splashed  into  the  eye.  ●  Symptoms  remain  after  good  rinsing.  
+ 
+14.  Small  Splinter  in  the  Skin  (SPLINTER_SMALL)  
+Common  signs  
+●  Small  piece  of  wood,  glass,  or  thorn  in  or  just  under  the  skin  ●  Local  pain  or  tenderness  ●  Usually  visible  at  the  surface  
+What  to  do  now  
+●  Wash  your  hands  and  the  area  with  soap  and  water.  ●  If  the  end  of  the  splinter  is  visible  and  easy  to  grasp,  use  clean  tweezers  to  pull  it  out  the  
+same
+ 
+way
+ 
+it
+ 
+went
+ 
+in.
+ ●  Rinse  the  area  again.  ●  Cover  with  a  small  bandage  if  needed.  
+What  not  to  do  
+●  Don’t  dig  deeply  into  the  skin  with  needles  or  unsterile  tools.  ●  Don’t  try  to  remove  large  or  deeply  embedded  objects  at  home.  ●  Don’t  ignore  growing  redness,  swelling,  or  drainage.  
+When  to  get  help  
+●  The  splinter  is  deeply  embedded,  near  the  eye,  or  in  a  joint.  ●  It  cannot  be  removed  easily.  ●  The  area  becomes  more  painful,  red,  swollen,  or  drains  pus.  
+ 
+15.  Mild  Contact  Rash  (RASH_CONTACT_MILD)  
+Common  signs  
+●  Red,  itchy  patches  or  streaks  where  the  skin  touched  something  irritating  or  allergenic  
+(plants,
+ 
+soaps,
+ 
+metals,
+ 
+etc.)
+ ●  No  trouble  breathing  ●  No  major  swelling  of  tongue  or  throat  "
+"What  to  do  now  
+●  Rinse  the  affected  skin  with  lukewarm  water  and  mild  soap,  especially  if  contact  was  
+recent.
+ ●  Avoid  further  contact  with  the  suspected  trigger.  ●  Apply  cool,  wet  compresses  to  soothe  the  area.  ●  Use  appropriate  over-the-counter  anti-itch  creams  or  lotions  on  intact  skin  if  
+recommended.
+ 
+What  not  to  do  
+●  Don’t  scratch  so  hard  that  the  skin  breaks.  ●  Don’t  use  strong  topical  medicines  on  open  or  severely  irritated  skin  without  guidance.  ●  Don’t  ignore  a  rash  that  is  spreading  with  whole-body  symptoms.  
+When  to  get  help  
+●  Rash  is  widespread,  on  the  face  or  genitals ,  or  very  painful.  ●  There  are  signs  of  infection  (spreading  redness,  warmth,  pus,  fever).  ●  There  is  trouble  breathing,  or  swelling  of  lips,  tongue,  or  throat,  or  dizziness  that  might  
+suggest
+ 
+a
+ 
+serious
+ 
+allergic
+ 
+reaction.
+ 
+ 
+Final  Disclaimer  
+This  guide  is  a  simplified  educational  summary  based  on  common  first-aid  principles  from  
+public
+ 
+health
+ 
+resources.
+ 
+It
+ 
+is
+ 
+not
+ 
+complete
+ 
+and
+ 
+does
+ 
+not
+ 
+give
+ 
+medical
+ 
+advice.
+ 
+For  real-world  health  problems,  always  follow  local  emergency  instructions  and  consult  qualified  
+healthcare
+ 
+professionals.
+ 
+ "
+"First Aid FAQ and Decision Tips
+This document gives short, practical answers to common questions about basic first aid, especially for mild problems such as minor cuts, burns, sprains, and simple insect bites.
+How do I decide if something is ""minor"" enough for home first aid?
+For this, a situation is considered ""minor"" if all of the following are true:
+The person is awake, talking, and breathing normally.
+Bleeding (if any) is slow, small in amount, and can be controlled with direct pressure.
+Pain is mild to moderate and not rapidly getting worse.
+The injured area is small and limited (for example, a small cut, small burn, or small rash patch).
+There are NO signs of emergency: no severe trouble breathing, chest pain, sudden confusion, or loss of consciousness.
+If any of those “big red flag” symptoms appear, it should be treated as a possible emergency, not just a minor first-aid situation.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR, BURN_MILD, BRUISE_SIMPLE
+How long should I apply pressure to a minor cut before worrying? [CUT_MINOR]
+For a small cut or scrape:
+Apply firm, direct pressure with a clean cloth or bandage.
+Hold continuous pressure for around 10–15 minutes before checking.
+Do not keep lifting the cloth every few seconds to “peek,” because that can restart bleeding.
+If bleeding does not slow and clearly improve after around 10–15 minutes of steady pressure, or if blood is soaking through multiple bandages, the cut may not be minor and you should seek medical help.
+Related condition: CUT_MINOR
+How long should I cool a mild burn with water? [BURN_MILD, SUNBURN_MILD]
+For a small, mild burn with no blisters:
+Move away from the heat source immediately.
+Cool the burned area with cool (not ice-cold) running water or a cool, wet cloth.
+A common recommendation is to cool for about 10–20 minutes or until pain has eased.
+Cooling helps remove heat from the skin and may limit how deep the burn goes. Do not use ice directly on the skin.
+Related conditions: BURN_MILD, SUNBURN_MILD
+When should I worry about infection after a minor skin injury? [CUT_MINOR, PUNCTURE_MINOR, BLISTER_SMALL, SPLINTER_SMALL]
+Infection risk increases if:
+Redness spreads outward from the wound.
+The area feels increasingly warm, swollen, or painful.
+Pus or cloudy fluid appears.
+The person develops fever, chills, or feels generally unwell.
+Mild soreness and a small red rim can be normal in the first day, but infection usually looks like symptoms getting steadily worse, not better.
+If you see signs of infection, especially spreading redness or fever, you should seek medical advice.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR, BLISTER_SMALL, SPLINTER_SMALL
+How do I decide whether a burn might need professional care? [BURN_MILD]
+Even if a burn starts out looking small, you should consider professional help more urgently when:
+The burned area is larger than the palm of the person’s hand.
+The burn is on the face, hands, feet, genitals, or over a major joint.
+The skin looks charred, very pale, or leathery.
+There are many blisters or blisters that form very quickly.
+Pain is severe or the person seems very ill.
+Small, red, non-blistering burns on limited areas can often be managed with first-aid cooling and gentle protection, but large or deep burns deserve urgent medical evaluation.
+Related condition: BURN_MILD
+What is the big difference between a cut and a puncture in first-aid terms? [CUT_MINOR, PUNCTURE_MINOR]
+A minor cut or scrape (CUT_MINOR) is usually a shallow injury that affects the surface of the skin and may bleed more visibly.
+A puncture wound (PUNCTURE_MINOR) is a deep, narrow path created by something like a nail, thorn, or tack.
+Puncture wounds can sometimes bleed less on the surface but carry a higher risk of infection, especially if the object was dirty or rusty. Because of that, cleaning and tetanus protection are especially important for puncture wounds.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR
+What should I do if I am not sure whether to continue a sport after an ankle injury? [SPRAIN_ANKLE_MILD]
+As a general rule for this project:
+If the person cannot put weight on the injured ankle at all, or pain is sharp and severe, they should stop the activity and may need medical assessment.
+If walking is possible but painful and the ankle is swollen or tender, rest and basic first aid (RICE) are appropriate.
+Continuing high-impact activity on a clearly painful ankle increases the risk of further damage.
+When in doubt, it is safer to stop the activity and rest rather than pushing through significant pain.
+Related condition: SPRAIN_ANKLE_MILD
+When is a nosebleed likely to be “simple” versus more serious? [NOSEBLEED_SIMPLE]
+A nosebleed is more likely to be “simple” when:
+It comes from one side or the front of the nose.
+The person can sit up, lean forward, and breathe comfortably.
+Bleeding slows or stops within about 10–20 minutes using proper pressure.
+A nosebleed deserves more urgent care if:
+Bleeding is very heavy or continues despite correct pressure.
+It follows a major facial or head injury.
+The person has trouble breathing, feels very faint, or is on blood-thinning medications.
+Related condition: NOSEBLEED_SIMPLE
+What should I do if I am not sure whether someone fainted or had a seizure? [FAINTING_BRIEF]
+This project’s content focuses on brief fainting with quick recovery, not seizures. In real life:
+Fainting (syncope) often happens when blood pressure drops. The person usually becomes pale, limp, and loses consciousness briefly, then wakes up quickly when lying flat.
+A seizure can include rigid or jerking movements, confusion afterward, or loss of bladder control.
+If you are unsure whether it was a fainting episode or a seizure, or if the person does not wake up quickly and normally, this should be treated as a medical emergency.
+Related condition: FAINTING_BRIEF
+What are some practical signs that dehydration is getting more serious? [DEHYDRATION_MILD]
+Mild dehydration may cause:
+Thirst
+Dry mouth
+Darker-than-usual urine
+Mild fatigue or lightheadedness
+More serious dehydration can be suggested by:
+Very little or no urine for many hours
+Very dry mouth and tongue
+Rapid heartbeat or breathing
+Confusion, dizziness, or fainting
+Mild dehydration can often be improved by resting in a cool place and drinking fluids slowly. Signs of more severe dehydration should prompt medical evaluation.
+Related condition: DEHYDRATION_MILD
+How can I tell if a bite or sting is staying “local” versus turning into a possible allergic emergency? [INSECT_BITE_MILD, RASH_CONTACT_MILD]
+A local reaction usually looks like:
+Redness, mild swelling, and itching around the bite or sting site only.
+Symptoms mainly focused in that small skin area.
+Possible signs of a more serious allergic reaction include:
+Swelling of the lips, tongue, or throat
+Trouble breathing or wheezing
+Tightness in the chest
+Widespread hives or rash, not just at the sting site
+Feeling faint or like you might pass out
+Any breathing difficulty, throat swelling, or feeling faint after a bite or sting should be treated as a potential emergency.
+Related conditions: INSECT_BITE_MILD, RASH_CONTACT_MILD
+What should I remember about eyes and foreign particles? [EYE_FOREIGN_SMALL]
+Simple “dust-in-eye” situations may improve after gentle rinsing with clean water or saline, and discomfort should start to settle.
+However, you should not treat it as minor if:
+Pain is strong or not improving.
+Vision is clearly affected.
+Something appears to be embedded in the eye.
+Chemicals splashed into the eye.
+Eyes are delicate, and it is safer to seek professional eye care when symptoms are significant or persistent.
+Related condition: EYE_FOREIGN_SMALL
+Are there general “don’ts” that apply to most minor injuries? [Multiple]
+For many basic first-aid situations in this project, these general “do not” rules apply:
+Do not ignore new or worsening symptoms (especially fever, spreading redness, or severe pain).
+Do not use unsterile sharp tools to dig into skin or wounds.
+Do not apply ice directly to skin for long periods.
+Do not use harsh chemicals on open wounds.
+Do not delay seeking help if you feel something is “seriously wrong.”
+These rules are not complete, but they provide a simple safety net for common mild problems.
+Related conditions: CUT_MINOR, PUNCTURE_MINOR, BURN_MILD, BLISTER_SMALL, SPRAIN_ANKLE_MILD, INSECT_BITE_MILD, DEHYDRATION_MILD, and others.
+Project Note: How this FAQ fits into the system
+In this data project:
+The CSV file provides structured information: condition IDs, categories, severity, and concise step lists.
+The PDF guide provides detailed human-readable walkthroughs for each condition.
+This FAQ text file provides short, cross-cutting explanations that connect conditions, describe red flags, and explain decision points.
+Together, these sources allow a retrieval-augmented model to answer questions both at the specific level (“What do I do for a minor cut?”) and at the reasoning level (“How do I know if this is still minor or not?”).
+This document is educational only and not medical advice."
